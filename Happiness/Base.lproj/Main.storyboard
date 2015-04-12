@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Zk1-yF-38n">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--Happiness View Controller-->
+        <scene sceneID="Zcf-2f-aiQ">
+            <objects>
+                <viewController id="Zk1-yF-38n" customClass="HappinessViewController" customModule="Happiness" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Is-7B-n5y"/>
+                        <viewControllerLayoutGuide type="bottom" id="rbQ-nS-Bkz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rdb-nu-SJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Fw5-fq-L4y" customClass="FaceView" customModule="Happiness" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fw5-fq-L4y" firstAttribute="bottom" secondItem="rbQ-nS-Bkz" secondAttribute="top" id="JPt-bX-9C4"/>
+                            <constraint firstItem="Fw5-fq-L4y" firstAttribute="top" secondItem="Rdb-nu-SJ6" secondAttribute="top" id="QEb-St-0gi"/>
+                            <constraint firstAttribute="trailing" secondItem="Fw5-fq-L4y" secondAttribute="trailing" id="RrY-7Q-hbu"/>
+                            <constraint firstItem="Fw5-fq-L4y" firstAttribute="leading" secondItem="Rdb-nu-SJ6" secondAttribute="leading" id="j9f-DM-x1N"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CR7-oc-DDr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="150"/>
+        </scene>
+    </scenes>
+</document>
